@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel Hidalgo - Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 640'><path fill='%23007acc' d='M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z'/></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./src/styles/main.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <strong>Leonel Hidalgo</strong>
+            </a>
+            
+            <div class="d-flex align-items-center">
+                <!-- Theme Toggle -->
+                <button id="themeToggle" class="btn btn-outline-light me-3 theme-toggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title">Leonel Hidalgo</h1>
+                    <h2 class="hero-subtitle">Analista de Sistemas & Desarrollador Full Stack</h2>
+                    <p class="hero-description">
+                        Especializado en desarrollo Back-End con Java, GoLang y TypeScript. 
+                        Apasionado por crear soluciones robustas y eficientes. 
+                        Actualmente desarrollando proyectos bajo mi marca <strong>Black Anvil Softworks</strong>.
+                    </p>
+                    <div class="hero-badges">
+                        <span class="badge bg-primary">Java</span>
+                        <span class="badge bg-primary">TypeScript</span>
+                        <span class="badge bg-primary">PostgreSQL</span>
+                        <span class="badge bg-primary">React</span>
+                        <span class="badge bg-primary">Node.js</span>
+                    </div>
+                    <div class="hero-actions mt-4">
+                        <a href="#contact" class="btn btn-primary me-3">Contactar</a>
+                        <a href="#experience" class="btn btn-outline-secondary">Ver Proyectos</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-image-container">
+                        <img src="./src/assets/images/proflie.jpeg" 
+                             alt="Leonel Hidalgo" 
+                             class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre Mí</h2>
+                    <div class="about-content">
+                        <p>
+                            Soy un desarrollador apasionado por la tecnología, con preferencia por el Back-End 
+                            y las bases de datos. Entiendo el desarrollo de software como un arte, donde cada 
+                            línea de código es una herramienta para crear soluciones elegantes y funcionales.
+                        </p>
+                        
+                        <h4 class="mt-4">Mis Metas</h4>
+                        <ul>
+                            <li>Dominar arquitecturas de microservicios y cloud computing</li>
+                            <li>Contribuir a proyectos open source</li>
+                            <li>Liderar equipos de desarrollo técnico</li>
+                            <li>Expandir Black Anvil Softworks</li>
+                        </ul>
+
+                        <h4 class="mt-4">Logros Destacados</h4>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-award"></i>
+                                <span>Placa conmemorativa 2021 - Reconocimiento por desempeño en PFA</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Medalla de oro - Torneo interpolicial de Taekwondo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hobbies-section">
+                        <h4>Hobbies & Intereses</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="hobby-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Proyectos Personales</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Inversiones en Bolsa</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="hobby-item">
+                                    <i class="fas fa-fist-raised"></i>
+                                    <span>Artes Marciales</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <i class="fas fa-book"></i>
+                                    <span>Lectura</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-4">Preferencias Técnicas</h4>
+                        <div class="preferences">
+                            <div class="preference-item">
+                                <strong>Back-End:</strong> Java, GoLang, TypeScript, Node.js
+                            </div>
+                            <div class="preference-item">
+                                <strong>Bases de Datos:</strong> PostgreSQL, OracleDB, Supabase
+                            </div>
+                            <div class="preference-item">
+                                <strong>Front-End:</strong> React, Next.js, Bootstrap
+                            </div>
+                            <div class="preference-item">
+                                <strong>Herramientas:</strong> GitHub, Prisma, Docker
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title text-center">Experiencia & Proyectos</h2>
+            
+            <div class="row">
+                <!-- Experience -->
+                <div class="col-lg-6">
+                    <div class="experience-card">
+                        <h4>Experiencia Laboral</h4>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2025 - Presente</div>
+                                <div class="timeline-content">
+                                    <h5>Policía Federal Argentina</h5>
+                                    <h6>Desarrollador Full Stack</h6>
+                                    <ul>
+                                        <li>Desarrollo de aplicaciones web internas</li>
+                                        <li>Análisis de requerimientos y desarrollo de soluciones</li>
+                                        <li>Tecnologías: HTML, CSS, JavaScript, PHP, OracleDB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2019 - 2024</div>
+                                <div class="timeline-content">
+                                    <h5>Policía Federal Argentina</h5>
+                                    <h6>Oficial de Comunicaciones</h6>
+                                    <ul>
+                                        <li>Gestión de servicios de Internet a nivel nacional</li>
+                                        <li>Supervisión de inventario y base de datos</li>
+                                        <li>Administración de contrataciones y facturación</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projects -->
+                <div class="col-lg-6">
+                    <div class="projects-card">
+                        <div class="brand-header">
+                            <h4>Black Anvil Softworks</h4>
+                            <p class="brand-tagline">Forjando código con precisión de herrero</p>
+                        </div>
+                        
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <h5>Proyecto Inventario</h5>
+                                <p>Sistema de gestión de inventario desarrollado para PFA</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">OracleDB</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <h5>Sistema RR.HH.</h5>
+                                <p>Plataforma para gestión de recursos humanos institucional</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Ajax</span>
+                                    <span class="tech-tag">CSS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <h5>Portfolio Personal</h5>
+                                <p>Este sitio web - Desarrollado con TypeScript y Bootstrap</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">SCSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="github-cta text-center mt-4">
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fab fa-github"></i>
+                                Ver más en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center">Contacto</h2>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>Email</strong>
+                                        <p>118.hidalgo.leonel.1358@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>Teléfono</strong>
+                                        <p>+54 9 11-5836-8857</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Ubicación</strong>
+                                        <p>Flores, CABA, Argentina</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div>
+                                        <strong>LinkedIn Personal</strong>
+                                        <p>/in/leonelhidalgo</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div>
+                                        <strong>LinkedIn Marca</strong>
+                                        <p>/company/black-anvil-softworks</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <div>
+                                        <strong>GitHub</strong>
+                                        <p>/leonelhidalgo</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-globe"></i>
+                                    <div>
+                                        <strong>Sitio Web marca personal</strong>
+                                        <p>blackanvilsoftworks.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="social-links text-center mt-5">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center mt-5 pb-5">
+                <p>&copy; 2024 Leonel Hidalgo. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ usando TypeScript y Bootstrap</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/scripts/main.js"></script>
+</body>
+</html>
