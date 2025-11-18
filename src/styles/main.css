@@ -197,14 +197,15 @@ section {
 }
 
 /* About Section */
-.about-section {
+.about-section, .modal-content {
   background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }
 
 .about-content .achievement-item,
 .hobbies-section .hobby-item,
 .preferences .preference-item {
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: var(--card-bg);
   padding: 1rem;
   margin: 0.5rem 0;
   border-radius: 8px;
@@ -350,7 +351,7 @@ section {
   transform: translateY(-5px);
 }
 
-.projects-grid .project-card h5 {
+.projects-grid .project-card h5, .modal-title {
   color: var(--accent-color);
   margin-bottom: 0.5rem;
 }
@@ -375,7 +376,8 @@ section {
   align-items: center;
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: var(--card-bg);
   border-radius: 10px;
   transition: transform 0.3s ease;
   border: 1px solid var(--border-color);
